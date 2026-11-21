@@ -3,33 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trần Nguyên Giang</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta name="theme-color" content="#101a2b">
+  <meta name="description" content="Portfolio cá nhân của Trần Nguyên Giang, sinh viên.">
+  <title>Trần Nguyên Giang — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <main class="portfolio">
-    <section class="hero">
-      <p class="eyebrow">Portfolio cá nhân</p>
-      <h1>Xin chào, mình là<br><span>Trần Nguyên Giang</span></h1>
-      <p class="subtitle">Sinh viên với niềm đam mê lập trình và xây dựng website.</p>
+    <header class="topbar">
+      <a class="wordmark" href="#home" aria-label="Trần Nguyên Giang, về đầu trang">NG<span>.</span></a>
+      <a class="nav-link" href="#project">Dự án <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Portfolio cá nhân</p>
+        <h1 id="hero-title">Xin chào,<br>mình là <span>Trần Nguyên Giang.</span></h1>
+        <p class="role">Sinh viên</p>
+        <a class="button" href="#project">Xem dự án <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="monogram" aria-hidden="true">
+        <span class="monogram-outline">NG</span>
+        <span class="monogram-mark">✳</span>
+      </div>
+      <span class="hero-index" aria-hidden="true">01 — 01</span>
     </section>
 
-    <section class="card">
-      <h2>Dự án</h2>
-      <div class="item">
-        <h3>Giới thiệu bản thân</h3>
-        <p>Website portfolio cá nhân được xây dựng bằng HTML và CSS.</p>
+    <section class="project-section" id="project" aria-labelledby="project-title">
+      <div class="section-heading">
+        <p class="eyebrow">Đang thực hiện</p>
+        <h2 id="project-title">Dự án<span>.</span></h2>
       </div>
+      <article class="project-card">
+        <div class="project-preview" aria-hidden="true">
+          <div class="preview-window">
+            <div class="preview-top"><i></i><i></i><i></i><span>my-portfolio</span></div>
+            <div class="preview-content">
+              <span class="preview-label">PORTFOLIO CÁ NHÂN</span>
+              <strong>Trần Nguyên<br><em>Giang.</em></strong>
+              <div class="preview-line"></div>
+            </div>
+          </div>
+          <span class="preview-star">✳</span>
+        </div>
+        <div class="project-info">
+          <div class="project-meta"><span>01</span><span>HTML · CSS</span></div>
+          <h3>Portfolio giới thiệu bản thân</h3>
+          <p>Website cá nhân giới thiệu Trần Nguyên Giang.</p>
+          <span class="project-caption">DỰ ÁN CÁ NHÂN</span>
+        </div>
+      </article>
     </section>
 
-    <section class="card">
-      <h2>Kỹ năng</h2>
-      <div class="skills">
-        <span>C++</span>
-        <span>HTML</span>
-        <span>CSS</span>
-      </div>
-    </section>
+    <footer class="footer">
+      <span>Trần Nguyên Giang</span>
+      <span>Portfolio cá nhân <span class="footer-star">✳</span></span>
+    </footer>
   </main>
 </body>
 </html>
