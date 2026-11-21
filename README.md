@@ -1,2 +1,3 @@
 # web.portfolio
-Portfolio website giới thiệu Trần Nguyên Giang
+
+Portfolio cá nhân của Trần Nguyên Giang — Thiết kế editorial tối giản, responsive và hoàn toàn bằng HTML/CSS.
