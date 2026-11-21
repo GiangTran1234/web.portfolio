@@ -6,15 +6,17 @@
     <meta name="theme-color" content="#11120f" />
 
     <title>Trần Nguyên Giang — Web Developer</title>
-    <meta name="description" content="Portfolio của Trần Nguyên Giang — lập trình viên web tập trung vào giao diện rõ ràng, hiệu quả và bền vững." />
-
-    <meta property="og:title" content="Trần Nguyên Giang — Portfolio" />
-    <meta property="og:description" content="Thiết kế và xây dựng trải nghiệm web có ý nghĩa." />
-    <meta property="og:type" content="website" />
+    <meta
+      name="description"
+      content="Portfolio của Trần Nguyên Giang — lập trình viên web tập trung vào giao diện rõ ràng, hiệu quả và bền vững."
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./style.css" />
   </head>
 
@@ -29,6 +31,7 @@
         <nav class="nav-links" aria-label="Điều hướng chính">
           <a href="#work">Dự án</a>
           <a href="#about">Giới thiệu</a>
+          <a href="#process">Quy trình</a>
           <a href="#contact">Liên hệ</a>
         </nav>
 
@@ -40,31 +43,36 @@
 
     <main id="top">
       <section class="hero container">
-        <div class="hero-intro">
+        <div class="hero-copy">
           <p class="eyebrow">Portfolio / 2026</p>
           <h1>Tôi xây dựng<br />trải nghiệm <em>số</em>.</h1>
-        </div>
 
-        <div class="hero-bottom">
-          <p class="hero-lead">
-            Xin chào, mình là <strong>Trần Nguyên Giang</strong> — lập trình viên web
-            tập trung vào những sản phẩm rõ ràng, dễ sử dụng và đáng tin cậy.
-          </p>
+          <div class="hero-bottom">
+            <p>
+              Xin chào, mình là <strong>Trần Nguyên Giang</strong> — lập trình
+              viên web tập trung vào những sản phẩm rõ ràng, dễ sử dụng và
+              đáng tin cậy.
+            </p>
 
-          <div class="hero-actions">
-            <a class="button button-dark" href="#work">Xem dự án <span>↓</span></a>
-            <a class="text-link" href="#about">Về mình <span>↗</span></a>
+            <div class="hero-actions">
+              <a class="button button-dark" href="#work">
+                Xem dự án <span>↓</span>
+              </a>
+              <a class="text-link" href="#about">
+                Về mình <span>↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <aside class="hero-index" aria-label="Thông tin tổng quan">
+        <aside class="hero-aside" aria-label="Thông tin">
           <div><span>Vai trò</span><strong>Web Developer</strong></div>
           <div><span>Chuyên môn</span><strong>Frontend / Full-stack</strong></div>
           <div><span>Đang làm</span><strong>Học &amp; xây dựng</strong></div>
         </aside>
       </section>
 
-      <section class="marquee" aria-label="Các kỹ năng chính">
+      <div class="marquee" aria-label="Các công nghệ">
         <div>
           <span>HTML &amp; CSS</span><i></i>
           <span>JavaScript</span><i></i>
@@ -72,46 +80,60 @@
           <span>Node.js</span><i></i>
           <span>Design-minded development</span>
         </div>
-      </section>
+      </div>
 
       <section id="work" class="section work-section">
         <div class="container">
-          <header class="section-header">
+          <header class="section-heading">
             <p class="eyebrow">01 / Dự án chọn lọc</p>
             <h2>Những sản phẩm<br />mình đã <em>xây dựng.</em></h2>
           </header>
 
           <div class="project-list">
             <article class="project">
-              <a class="project-visual visual-orbit" href="https://github.com/GiangTran1234" target="_blank" rel="noopener noreferrer" aria-label="Xem dự án Orbit trên GitHub">
-                <div class="orbit-ui">
+              <a
+                class="project-preview preview-green"
+                href="https://github.com/GiangTran1234"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="orbit-app">
                   <aside>
-                    <b>orbit.</b>
-                    <span class="selected"></span>
+                    <strong>orbit.</strong>
+                    <span class="active"></span>
                     <span></span>
                     <span></span>
                   </aside>
-                  <div class="orbit-main">
+
+                  <div class="orbit-content">
                     <p>Chào buổi sáng, Giang</p>
-                    <div class="stat-row">
+
+                    <div class="stats">
                       <div><strong>08</strong><span>Đang làm</span></div>
                       <div><strong>03</strong><span>Ưu tiên</span></div>
                       <div><strong>12</strong><span>Hoàn thành</span></div>
                     </div>
-                    <div class="task-row"><i></i><p><strong>Hoàn thành portfolio</strong><span>Hôm nay</span></p></div>
+
+                    <div class="task">
+                      <i></i>
+                      <p><strong>Hoàn thành portfolio</strong><span>Hôm nay</span></p>
+                    </div>
                   </div>
                 </div>
                 <span class="project-arrow">↗</span>
               </a>
 
               <div class="project-info">
-                <div class="project-number">01</div>
+                <span class="project-number">01</span>
                 <div>
                   <p class="project-type">Ứng dụng web · 2025</p>
                   <h3>Orbit — Quản lý công việc</h3>
-                  <p>Giải quyết việc tổ chức công việc và theo dõi tiến độ trong một không gian trực quan.</p>
+                  <p>
+                    Giải quyết việc tổ chức công việc và theo dõi tiến độ
+                    trong một không gian trực quan.
+                  </p>
                 </div>
-                <ul class="tags" aria-label="Công nghệ sử dụng">
+                <ul class="tags">
                   <li>React</li>
                   <li>TypeScript</li>
                   <li>Tailwind</li>
@@ -120,26 +142,41 @@
             </article>
 
             <article class="project">
-              <a class="project-visual visual-forma" href="https://github.com/GiangTran1234" target="_blank" rel="noopener noreferrer" aria-label="Xem dự án Forma trên GitHub">
-                <div class="forma-ui">
+              <a
+                class="project-preview preview-blue"
+                href="https://github.com/GiangTran1234"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="forma-app">
                   <p>forma / learn</p>
                   <h4>Học điều mới.<br />Mỗi ngày.</h4>
+
                   <div class="progress-card">
-                    <div><span>Khóa học hiện tại</span><strong>Web Development</strong></div>
-                    <div><strong>4 / 5</strong><span>Mục tiêu tuần</span></div>
+                    <div>
+                      <span>Khóa học hiện tại</span>
+                      <strong>Web Development</strong>
+                    </div>
+                    <div>
+                      <strong>4 / 5</strong>
+                      <span>Mục tiêu tuần</span>
+                    </div>
                   </div>
                 </div>
                 <span class="project-arrow">↗</span>
               </a>
 
               <div class="project-info">
-                <div class="project-number">02</div>
+                <span class="project-number">02</span>
                 <div>
                   <p class="project-type">Nền tảng học tập · 2025</p>
                   <h3>Forma — Không gian học tập</h3>
-                  <p>Xây dựng thói quen học tập bền vững qua lộ trình, ghi chú và theo dõi tiến độ.</p>
+                  <p>
+                    Xây dựng thói quen học tập bền vững qua lộ trình, ghi chú
+                    và theo dõi tiến độ.
+                  </p>
                 </div>
-                <ul class="tags" aria-label="Công nghệ sử dụng">
+                <ul class="tags">
                   <li>Next.js</li>
                   <li>Node.js</li>
                   <li>PostgreSQL</li>
@@ -152,27 +189,48 @@
 
       <section id="about" class="section about-section">
         <div class="container about-grid">
-          <header class="section-header">
+          <header class="section-heading">
             <p class="eyebrow">02 / Giới thiệu</p>
             <h2>Chú ý đến<br />chi tiết <em>&amp; mục đích.</em></h2>
           </header>
 
           <div class="about-copy">
-            <p class="about-lead">Mình quan tâm đến cách công nghệ tạo ra trải nghiệm tốt hơn cho con người.</p>
-            <p>Mỗi sản phẩm bắt đầu từ một vấn đề. Mình hướng đến giải pháp đơn giản, có cấu trúc rõ ràng, dễ bảo trì và mang lại giá trị thực tế.</p>
+            <p class="about-lead">
+              Mình quan tâm đến cách công nghệ tạo ra trải nghiệm tốt hơn cho
+              con người.
+            </p>
+
+            <p>
+              Mỗi sản phẩm bắt đầu từ một vấn đề. Mình hướng đến giải pháp đơn
+              giản, có cấu trúc rõ ràng, dễ bảo trì và mang lại giá trị thực tế.
+            </p>
 
             <div class="principles">
-              <article><span>01</span><h3>Tư duy logic</h3><p>Phân tích, đơn giản hoá và làm rõ yêu cầu.</p></article>
-              <article><span>02</span><h3>Chủ động học hỏi</h3><p>Cải thiện kiến thức qua dự án thực tế.</p></article>
-              <article><span>03</span><h3>Làm việc cởi mở</h3><p>Lắng nghe và hợp tác dựa trên mục tiêu chung.</p></article>
+              <article>
+                <span>01</span>
+                <h3>Tư duy logic</h3>
+                <p>Phân tích, đơn giản hoá và làm rõ yêu cầu.</p>
+              </article>
+
+              <article>
+                <span>02</span>
+                <h3>Chủ động học hỏi</h3>
+                <p>Cải thiện kiến thức qua dự án thực tế.</p>
+              </article>
+
+              <article>
+                <span>03</span>
+                <h3>Làm việc cởi mở</h3>
+                <p>Lắng nghe và hợp tác dựa trên mục tiêu chung.</p>
+              </article>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section process-section">
+      <section id="process" class="section process-section">
         <div class="container">
-          <header class="section-header compact">
+          <header class="section-heading compact">
             <p class="eyebrow">03 / Cách làm việc</p>
             <h2>Từ vấn đề<br />đến <em>sản phẩm.</em></h2>
           </header>
@@ -190,12 +248,16 @@
     <footer id="contact" class="footer">
       <div class="container">
         <p class="eyebrow">04 / Liên hệ</p>
+
         <div class="footer-main">
           <h2>Cùng tạo ra điều<br /><em>có ý nghĩa.</em></h2>
+
           <a class="footer-email" href="mailto:giangtran@example.com">
-            <span>Gửi email cho mình</span><b>↗</b>
+            <span>Gửi email cho mình</span>
+            <b>↗</b>
           </a>
         </div>
+
         <div class="footer-bottom">
           <p>© 2026 Trần Nguyên Giang</p>
           <div>
