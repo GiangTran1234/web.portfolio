@@ -1,67 +1,270 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101a2b">
-  <meta name="description" content="Portfolio cá nhân của Trần Nguyên Giang, sinh viên.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Trần Nguyên Giang — Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <main class="portfolio">
-    <header class="topbar">
-      <a class="wordmark" href="#home" aria-label="Trần Nguyên Giang, về đầu trang">NG<span>.</span></a>
-      <a class="nav-link" href="#project">Dự án <span aria-hidden="true">↘</span></a>
-    </header>
 
-    <section class="hero" id="home" aria-labelledby="hero-title">
-      <div class="hero-copy">
-        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Portfolio cá nhân</p>
-        <h1 id="hero-title">Xin chào,<br>mình là <span>Trần Nguyên Giang.</span></h1>
-        <p class="role">Sinh viên</p>
-        <a class="button" href="#project">Xem dự án <span aria-hidden="true">↓</span></a>
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <h1>Biến ý tưởng<br>thành sản phẩm<br>có giá trị.</h1>
+        <p class="hero-subtitle">Xin chào, mình là <strong>Trần Nguyên Giang</strong>.</p>
+        <p class="hero-desc">
+          Lập trình viên yêu thích xây dựng trải nghiệm số rõ ràng, hiệu quả và bền vững — từ giao diện đến hệ thống.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary">Khám phá dự án <span>↓</span></a>
+          <a href="#contact" class="btn btn-outline">Liên hệ với tôi <span>↗</span></a>
+        </div>
       </div>
-      <div class="monogram" aria-hidden="true">
-        <span class="monogram-outline">NG</span>
-        <span class="monogram-mark">✳</span>
-      </div>
-      <span class="hero-index" aria-hidden="true">01 — 01</span>
-    </section>
 
-    <section class="project-section" id="project" aria-labelledby="project-title">
-      <div class="section-heading">
-        <p class="eyebrow">Đang thực hiện</p>
-        <h2 id="project-title">Dự án<span>.</span></h2>
+      <!-- Code Terminal Card -->
+      <div class="terminal-card">
+        <div class="terminal-header">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="terminal-file">giang.dev</span>
+        </div>
+        <div class="terminal-body">
+          <p class="code-title">&lt;hello world /&gt;</p>
+          <div class="code-block">
+            <span class="code-label">// developer</span>
+            <p class="code-value highlight">Trần Nguyên Giang</p>
+          </div>
+          <div class="code-block">
+            <span class="code-label">// focus</span>
+            <p class="code-value">Web development</p>
+          </div>
+          <div class="code-block">
+            <span class="code-label">// mindset</span>
+            <p class="code-value">Build. Learn. Improve.</p>
+          </div>
+          <div class="terminal-status">
+            <span class="status-dot"></span> Sẵn sàng cho cơ hội mới
+          </div>
+        </div>
       </div>
-      <article class="project-card">
-        <div class="project-preview" aria-hidden="true">
-          <div class="preview-window">
-            <div class="preview-top"><i></i><i></i><i></i><span>my-portfolio</span></div>
-            <div class="preview-content">
-              <span class="preview-label">PORTFOLIO CÁ NHÂN</span>
-              <strong>Trần Nguyên<br><em>Giang.</em></strong>
-              <div class="preview-line"></div>
+    </div>
+  </header>
+
+  <!-- 01: MỘT CHÚT VỀ TÔI -->
+  <section id="about" class="section bg-light">
+    <div class="container about-grid">
+      <div>
+        <span class="section-tag">01 — MỘT CHÚT VỀ TÔI</span>
+        <h2>Không chỉ viết.<br>Mình giải quyết<br>vấn đề.</h2>
+      </div>
+      <div class="about-details">
+        <p class="lead-text">
+          Mình quan tâm đến cách công nghệ tạo ra trải nghiệm tốt hơn cho con người.
+        </p>
+        <p class="muted-text">
+          Mình hướng đến những sản phẩm có mục đích rõ ràng, dễ bảo trì và đem lại giá trị thực tiễn.
+        </p>
+        <div class="pillars-grid">
+          <div class="pillar-item">
+            <span class="pillar-num">01</span>
+            <h4>Tư duy logic</h4>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">02</span>
+            <h4>Chủ động học hỏi</h4>
+          </div>
+          <div class="pillar-item">
+            <span class="pillar-num">03</span>
+            <h4>Hợp tác cởi mở</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 02: KỸ NĂNG & CHUYÊN MÔN -->
+  <section id="skills" class="section">
+    <div class="container">
+      <span class="section-tag">02 — KỸ NĂNG & CHUYÊN MÔN</span>
+      <h2>Từ giao diện đến hệ thống.</h2>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <span class="card-num">01</span>
+          <h3>Frontend</h3>
+          <p>Xây dựng giao diện rõ ràng, linh hoạt trên mọi thiết bị.</p>
+          <div class="tag-list">
+            <span>HTML / CSS</span>
+            <span>JavaScript</span>
+            <span>React / Next.js</span>
+          </div>
+          <div class="card-footer">Tập trung vào trải nghiệm người dùng</div>
+        </div>
+
+        <div class="skill-card">
+          <span class="card-num">02</span>
+          <h3>Backend</h3>
+          <p>Thiết kế dịch vụ ổn định và kết nối dữ liệu có cấu trúc.</p>
+          <div class="tag-list">
+            <span>Node.js</span>
+            <span>REST API</span>
+            <span>PostgreSQL</span>
+          </div>
+          <div class="card-footer">Kiến trúc rõ ràng, dễ mở rộng</div>
+        </div>
+
+        <div class="skill-card">
+          <span class="card-num">03</span>
+          <h3>Công cụ & tư duy</h3>
+          <p>Làm việc quy trình, kiểm thử và cải tiến liên tục.</p>
+          <div class="tag-list">
+            <span>Git / GitHub</span>
+            <span>Docker</span>
+            <span>Figma</span>
+          </div>
+          <div class="card-footer">Ưu tiên tính đơn giản và hiệu quả</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 03: DỰ ÁN CHỌN LỌC -->
+  <section id="projects" class="section bg-light">
+    <div class="container">
+      <span class="section-tag">03 — DỰ ÁN CHỌN LỌC</span>
+      <h2>Học qua những gì đã xây.</h2>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="project-card">
+          <div class="project-preview preview-blue">
+            <!-- Thay thẻ div này bằng thẻ <img> ảnh chụp dự án của bạn -->
+            <div class="mockup-box">
+              <span class="mockup-brand">orbit.</span>
+              <p class="mockup-title">Chào buổi sáng, bạn!</p>
+              <div class="mockup-stats">
+                <div><strong>08</strong><span>Đang làm</span></div>
+                <div><strong>03</strong><span>Ưu tiên</span></div>
+                <div><strong>12</strong><span>Hoàn thành</span></div>
+              </div>
             </div>
           </div>
-          <span class="preview-star">✳</span>
-        </div>
-        <div class="project-info">
-          <div class="project-meta"><span>01</span><span>HTML · CSS</span></div>
-          <h3>Portfolio giới thiệu bản thân</h3>
-          <p>Website cá nhân giới thiệu Trần Nguyên Giang.</p>
-          <span class="project-caption">DỰ ÁN CÁ NHÂN</span>
-        </div>
-      </article>
-    </section>
+          <div class="project-meta">
+            <span class="project-cat">ỨNG DỤNG WEB</span>
+            <span class="project-year">2025</span>
+          </div>
+          <div class="project-header">
+            <h3>Orbit — Quản lý công việc</h3>
+            <a href="#" class="project-link" aria-label="Xem dự án Orbit">↗</a>
+          </div>
+          <p class="project-desc">
+            Tổ chức công việc, theo dõi tiến độ và cộng tác trong một không gian tối giản, giúp duy trì sự tập trung.
+          </p>
+          <div class="tag-list">
+            <span>React</span>
+            <span>TypeScript</span>
+            <span>Tailwind CSS</span>
+          </div>
+        </article>
 
-    <footer class="footer">
-      <span>Trần Nguyên Giang</span>
-      <span>Portfolio cá nhân <span class="footer-star">✳</span></span>
-    </footer>
-  </main>
+        <!-- Project 2 -->
+        <article class="project-card">
+          <div class="project-preview preview-sage">
+            <!-- Thay thẻ div này bằng thẻ <img> ảnh chụp dự án của bạn -->
+            <div class="mockup-box">
+              <span class="mockup-brand">forma / learn</span>
+              <p class="mockup-title">Học điều mới. Mỗi ngày.</p>
+              <div class="mockup-split">
+                <div class="mockup-dark-tile">Web development từ nền tảng</div>
+                <div class="mockup-stat-tile"><strong>4 / 5</strong><span>Mục tiêu tuần</span></div>
+              </div>
+            </div>
+          </div>
+          <div class="project-meta">
+            <span class="project-cat">NỀN TẢNG HỌC TẬP</span>
+            <span class="project-year">2025</span>
+          </div>
+          <div class="project-header">
+            <h3>Forma — Nền tảng học tập</h3>
+            <a href="#" class="project-link" aria-label="Xem dự án Forma">↗</a>
+          </div>
+          <p class="project-desc">
+            Không gian học tập theo lộ trình rõ ràng, kết hợp ghi chú và theo dõi tiến độ trực quan.
+          </p>
+          <div class="tag-list">
+            <span>Next.js</span>
+            <span>Node.js</span>
+            <span>PostgreSQL</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 04: CÁCH TÔI LÀM VIỆC -->
+  <section id="process" class="section">
+    <div class="container">
+      <span class="section-tag">04 — CÁCH TÔI LÀM VIỆC</span>
+      <h2>Rõ bài toán. Chắc giải pháp.</h2>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="step-label">01 / KHÁM PHÁ</span>
+          <h4>Hiểu đúng vấn đề</h4>
+          <p>Lắng nghe, đặt câu hỏi và làm rõ nhu cầu thực sự của người dùng.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-label">02 / ĐỊNH HƯỚNG</span>
+          <h4>Chọn hướng giải quyết</h4>
+          <p>Phác thảo cấu trúc và lựa chọn công nghệ phù hợp với mục tiêu.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-label">03 / XÂY DỰNG</span>
+          <h4>Phát triển từng bước</h4>
+          <p>Triển khai gọn gàng, kiểm thử liên tục để đảm bảo tính ổn định.</p>
+        </div>
+        <div class="process-step">
+          <span class="step-label">04 / CẢI TIẾN</span>
+          <h4>Đo lường & hoàn thiện</h4>
+          <p>Tiếp nhận phản hồi, tối ưu hiệu năng và trải nghiệm sử dụng.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 05: KẾT NỐI (FOOTER) -->
+  <footer id="contact" class="footer">
+    <div class="container">
+      <span class="section-tag light-tag">05 — KẾT NỐI</span>
+      <div class="footer-main">
+        <div>
+          <h2>Cùng xây điều<br>đáng tự hào.</h2>
+          <p class="footer-desc">
+            Bạn có một ý tưởng, cơ hội hợp tác hay đơn giản muốn trò chuyện? Mình luôn sẵn sàng kết nối.
+          </p>
+        </div>
+        <div class="footer-cta-box">
+          <a href="mailto:hello@giang.dev" class="btn btn-mint">Gửi lời chào tới mình ↗</a>
+          <div class="social-links">
+            <a href="#">GitHub ↗</a>
+            <a href="#">LinkedIn ↗</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span class="brand-logo">[Tên bạn].dev</span>
+        <span>Thiết kế & lập trình bởi Trần Nguyên Giang</span>
+        <span>© 2026</span>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
