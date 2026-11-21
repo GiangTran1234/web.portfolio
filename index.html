@@ -1,255 +1,417 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Trần Nguyên Giang — Portfolio</title>
-  <meta name="description" content="Portfolio cá nhân của Trần Nguyên Giang — Lập trình viên Web yêu thích xây dựng trải nghiệm số rõ ràng, hiệu quả và bền vững." />
-  
-  <!-- Thẻ hiển thị đẹp khi gửi link qua Facebook, Zalo, LinkedIn -->
-  <meta property="og:title" content="Trần Nguyên Giang — Portfolio" />
-  <meta property="og:description" content="Biến ý tưởng thành sản phẩm có giá trị." />
-  <meta property="og:type" content="website" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Phông chữ Google Fonts (Dùng HTTPS chuẩn cho GitHub Pages) -->
-  <link rel="preconnect" href="https://googleapis.com">
-  <link rel="preconnect" href="https://gstatic.com" crossorigin>
-  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <!-- Đường dẫn tương đối chuẩn cho cả repo gốc và repo phụ -->
-  <link rel="stylesheet" href="./style.css" />
-</head>
-<body>
+    <title>Trần Nguyên Giang — Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio của Trần Nguyên Giang — Lập trình viên Web xây dựng sản phẩm rõ ràng, hiệu quả và bền vững."
+    />
+    <meta name="theme-color" content="#0a0f1c" />
 
-  <!-- HERO SECTION -->
-  <header class="hero">
-    <div class="container hero-grid">
-      <div class="hero-content">
-        <h1>Biến ý tưởng<br>thành sản phẩm<br>có giá trị.</h1>
-        <p class="hero-subtitle">Xin chào, mình là <strong>Trần Nguyên Giang</strong>.</p>
-        <p class="hero-desc">
-          Lập trình viên yêu thích xây dựng trải nghiệm số rõ ràng, hiệu quả và bền vững — từ giao diện đến hệ thống.
-        </p>
-        <div class="hero-actions">
-          <a href="#projects" class="btn btn-primary">Khám phá dự án <span>↓</span></a>
-          <a href="#contact" class="btn btn-outline">Liên hệ với tôi <span>↗</span></a>
-        </div>
+    <meta property="og:title" content="Trần Nguyên Giang — Portfolio" />
+    <meta
+      property="og:description"
+      content="Từ ý tưởng đến sản phẩm số có giá trị."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="#" aria-label="Về đầu trang">
+          <span class="brand-mark">TG</span>
+          <span>Giang.dev</span>
+        </a>
+
+        <nav class="nav-links" aria-label="Điều hướng chính">
+          <a href="#about">Giới thiệu</a>
+          <a href="#skills">Kỹ năng</a>
+          <a href="#projects">Dự án</a>
+          <a href="#contact">Liên hệ</a>
+        </nav>
+
+        <a class="nav-contact" href="#contact">Kết nối ↗</a>
       </div>
+    </header>
 
-      <!-- Code Terminal Card -->
-      <div class="terminal-card">
-        <div class="terminal-header">
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="dot"></span>
-          <span class="terminal-file">giang.dev</span>
-        </div>
-        <div class="terminal-body">
-          <p class="code-title">&lt;hello world /&gt;</p>
-          <div class="code-block">
-            <span class="code-label">// developer</span>
-            <p class="code-value highlight">Trần Nguyên Giang</p>
-          </div>
-          <div class="code-block">
-            <span class="code-label">// focus</span>
-            <p class="code-value">Web development</p>
-          </div>
-          <div class="code-block">
-            <span class="code-label">// mindset</span>
-            <p class="code-value">Build. Learn. Improve.</p>
-          </div>
-          <div class="terminal-status">
-            <span class="status-dot"></span> Sẵn sàng cho cơ hội mới
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">
+              <span class="status-dot"></span>
+              Sẵn sàng cho cơ hội mới
+            </p>
 
-  <!-- 01: MỘT CHÚT VỀ TÔI -->
-  <section id="about" class="section bg-light">
-    <div class="container about-grid">
-      <div>
-        <span class="section-tag">01 — MỘT CHÚT VỀ TÔI</span>
-        <h2>Không chỉ viết.<br>Mình giải quyết<br>vấn đề.</h2>
-      </div>
-      <div class="about-details">
-        <p class="lead-text">
-          Mình quan tâm đến cách công nghệ tạo ra trải nghiệm tốt hơn cho con người.
-        </p>
-        <p class="muted-text">
-          Mình hướng đến những sản phẩm có mục đích rõ ràng, dễ bảo trì và đem lại giá trị thực tiễn.
-        </p>
-        <div class="pillars-grid">
-          <div class="pillar-item">
-            <span class="pillar-num">01</span>
-            <h4>Tư duy logic</h4>
-          </div>
-          <div class="pillar-item">
-            <span class="pillar-num">02</span>
-            <h4>Chủ động học hỏi</h4>
-          </div>
-          <div class="pillar-item">
-            <span class="pillar-num">03</span>
-            <h4>Hợp tác cởi mở</h4>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+            <h1>
+              Từ ý tưởng đến
+              <span>trải nghiệm số</span>
+              có giá trị.
+            </h1>
 
-  <!-- 02: KỸ NĂNG & CHUYÊN MÔN -->
-  <section id="skills" class="section">
-    <div class="container">
-      <span class="section-tag">02 — KỸ NĂNG & CHUYÊN MÔN</span>
-      <h2>Từ giao diện đến hệ thống.</h2>
+            <p class="hero-description">
+              Xin chào, mình là <strong>Trần Nguyên Giang</strong>.
+              Mình xây dựng giao diện, ứng dụng web và hệ thống tập trung vào
+              sự rõ ràng, hiệu quả và khả năng phát triển lâu dài.
+            </p>
 
-      <div class="skills-grid">
-        <div class="skill-card">
-          <span class="card-num">01</span>
-          <h3>Frontend</h3>
-          <p>Xây dựng giao diện rõ ràng, linh hoạt trên mọi thiết bị.</p>
-          <div class="tag-list">
-            <span>HTML / CSS</span>
-            <span>JavaScript</span>
-            <span>React / Next.js</span>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#projects">
+                Khám phá dự án
+                <span aria-hidden="true">↓</span>
+              </a>
+              <a class="button button-secondary" href="#contact">
+                Liên hệ với mình
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+
+            <dl class="hero-facts">
+              <div>
+                <dt>Vai trò</dt>
+                <dd>Web Developer</dd>
+              </div>
+              <div>
+                <dt>Định hướng</dt>
+                <dd>Frontend / Full-stack</dd>
+              </div>
+              <div>
+                <dt>Trạng thái</dt>
+                <dd>Đang học & xây dựng</dd>
+              </div>
+            </dl>
           </div>
-          <div class="card-footer">Tập trung vào trải nghiệm người dùng</div>
-        </div>
 
-        <div class="skill-card">
-          <span class="card-num">02</span>
-          <h3>Backend</h3>
-          <p>Thiết kế dịch vụ ổn định và kết nối dữ liệu có cấu trúc.</p>
-          <div class="tag-list">
-            <span>Node.js</span>
-            <span>REST API</span>
-            <span>PostgreSQL</span>
-          </div>
-          <div class="card-footer">Kiến trúc rõ ràng, dễ mở rộng</div>
-        </div>
+          <div class="profile-card" aria-label="Thông tin lập trình viên">
+            <div class="profile-card-head">
+              <div class="window-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
+              <p>portfolio.ts</p>
+            </div>
 
-        <div class="skill-card">
-          <span class="card-num">03</span>
-          <h3>Công cụ & tư duy</h3>
-          <p>Làm việc quy trình, kiểm thử và cải tiến liên tục.</p>
-          <div class="tag-list">
-            <span>Git / GitHub</span>
-            <span>Docker</span>
-            <span>Figma</span>
-          </div>
-          <div class="card-footer">Ưu tiên tính đơn giản và hiệu quả</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 03: DỰ ÁN CHỌN LỌC -->
-  <section id="projects" class="section bg-light">
-    <div class="container">
-      <span class="section-tag">03 — DỰ ÁN CHỌN LỌC</span>
-      <h2>Học qua những gì đã xây.</h2>
-
-      <div class="projects-grid">
-        <!-- Project 1 -->
-        <article class="project-card">
-          <div class="project-preview preview-blue">
-            <div class="mockup-box">
-              <span class="mockup-brand">orbit.</span>
-              <p class="mockup-title">Chào buổi sáng, bạn!</p>
-              <div class="mockup-stats">
-                <div><strong>08</strong><span>Đang làm</span></div>
-                <div><strong>03</strong><span>Ưu tiên</span></div>
-                <div><strong>12</strong><span>Hoàn thành</span></div>
+            <div class="profile-card-body">
+              <div class="code-line">
+                <span class="line-number">01</span>
+                <code><span class="pink">const</span> <span class="blue">developer</span> = {</code>
+              </div>
+              <div class="code-line">
+                <span class="line-number">02</span>
+                <code>&nbsp;&nbsp;name: <span class="green">'Trần Nguyên Giang'</span>,</code>
+              </div>
+              <div class="code-line">
+                <span class="line-number">03</span>
+                <code>&nbsp;&nbsp;focus: <span class="green">'Web development'</span>,</code>
+              </div>
+              <div class="code-line">
+                <span class="line-number">04</span>
+                <code>&nbsp;&nbsp;mindset: <span class="green">'Build. Learn. Improve.'</span>,</code>
+              </div>
+              <div class="code-line">
+                <span class="line-number">05</span>
+                <code>&nbsp;&nbsp;passion: <span class="green">'Useful products'</span></code>
+              </div>
+              <div class="code-line">
+                <span class="line-number">06</span>
+                <code>};</code>
               </div>
             </div>
-          </div>
-          <div class="project-meta">
-            <span class="project-cat">ỨNG DỤNG WEB</span>
-            <span class="project-year">2025</span>
-          </div>
-          <div class="project-header">
-            <h3>Orbit — Quản lý công việc</h3>
-            <!-- Gắn link GitHub repo hoặc link demo của dự án Orbit vào đây -->
-            <a href="https://github.com[username-cua-ban]/orbit" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Xem dự án Orbit trên GitHub">↗</a>
-          </div>
-          <p class="project-desc">
-            Tổ chức công việc, theo dõi tiến độ và cộng tác trong một không gian tối giản, giúp duy trì sự tập trung.
-          </p>
-          <div class="tag-list">
-            <span>React</span>
-            <span>TypeScript</span>
-            <span>Tailwind CSS</span>
-          </div>
-        </article>
 
-        <!-- Project 2 -->
-        <article class="project-card">
-          <div class="project-preview preview-sage">
-            <div class="mockup-box">
-              <span class="mockup-brand">forma / learn</span>
-              <p class="mockup-title">Học điều mới. Mỗi ngày.</p>
-              <div class="mockup-split">
-                <div class="mockup-dark-tile">Web development từ nền tảng</div>
-                <div class="mockup-stat-tile"><strong>4 / 5</strong><span>Mục tiêu tuần</span></div>
-              </div>
+            <div class="profile-terminal">
+              <span>$</span>
+              <p>Ready to create something meaningful<span class="cursor">_</span></p>
             </div>
           </div>
-          <div class="project-meta">
-            <span class="project-cat">NỀN TẢNG HỌC TẬP</span>
-            <span class="project-year">2025</span>
+        </div>
+      </section>
+
+      <section id="about" class="section section-light">
+        <div class="container about-grid">
+          <div class="section-heading">
+            <p class="section-label">01 / Về mình</p>
+            <h2>Không chỉ viết code.<br />Mình giải quyết vấn đề.</h2>
           </div>
-          <div class="project-header">
-            <h3>Forma — Nền tảng học tập</h3>
-            <!-- Gắn link GitHub repo hoặc link demo của dự án Forma vào đây -->
-            <a href="https://github.com[username-cua-ban]/forma" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="Xem dự án Forma trên GitHub">↗</a>
+
+          <div class="about-content">
+            <p class="lead">
+              Mình quan tâm đến cách công nghệ tạo ra trải nghiệm tốt hơn
+              cho con người.
+            </p>
+            <p>
+              Mỗi sản phẩm đều bắt đầu từ một vấn đề cần giải quyết. Mình
+              hướng đến những giải pháp có mục đích rõ ràng, dễ sử dụng,
+              dễ bảo trì và mang lại giá trị thực tế.
+            </p>
+
+            <div class="principles">
+              <article>
+                <span>01</span>
+                <h3>Tư duy logic</h3>
+                <p>Phân tích, đơn giản hoá và làm rõ yêu cầu.</p>
+              </article>
+              <article>
+                <span>02</span>
+                <h3>Chủ động học hỏi</h3>
+                <p>Cải thiện kiến thức qua dự án thực tế.</p>
+              </article>
+              <article>
+                <span>03</span>
+                <h3>Hợp tác cởi mở</h3>
+                <p>Lắng nghe và làm việc dựa trên mục tiêu chung.</p>
+              </article>
+            </div>
           </div>
-          <p class="project-desc">
-            Không gian học tập theo lộ trình rõ ràng, kết hợp ghi chú và theo dõi tiến độ trực quan.
-          </p>
-          <div class="tag-list">
-            <span>Next.js</span>
-            <span>Node.js</span>
-            <span>PostgreSQL</span>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <div class="section-heading horizontal-heading">
+            <div>
+              <p class="section-label">02 / Chuyên môn</p>
+              <h2>Từ giao diện đến hệ thống.</h2>
+            </div>
+            <p>
+              Công nghệ là công cụ. Trải nghiệm và giá trị người dùng mới
+              là điều quan trọng.
+            </p>
           </div>
-        </article>
+
+          <div class="skills-grid">
+            <article class="skill-card">
+              <div class="skill-top">
+                <span>01</span>
+                <div class="skill-icon">&lt;/&gt;</div>
+              </div>
+              <h3>Frontend</h3>
+              <p>Xây dựng giao diện trực quan, linh hoạt và nhất quán trên mọi thiết bị.</p>
+              <ul class="tag-list">
+                <li>HTML / CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Next.js</li>
+              </ul>
+            </article>
+
+            <article class="skill-card featured">
+              <div class="skill-top">
+                <span>02</span>
+                <div class="skill-icon">{ }</div>
+              </div>
+              <h3>Backend</h3>
+              <p>Thiết kế API và luồng dữ liệu ổn định, an toàn và dễ mở rộng.</p>
+              <ul class="tag-list">
+                <li>Node.js</li>
+                <li>REST API</li>
+                <li>PostgreSQL</li>
+              </ul>
+            </article>
+
+            <article class="skill-card">
+              <div class="skill-top">
+                <span>03</span>
+                <div class="skill-icon">⌘</div>
+              </div>
+              <h3>Công cụ & quy trình</h3>
+              <p>Làm việc có cấu trúc, kiểm thử và cải tiến liên tục.</p>
+              <ul class="tag-list">
+                <li>Git / GitHub</li>
+                <li>Docker</li>
+                <li>Figma</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section section-light">
+        <div class="container">
+          <div class="section-heading horizontal-heading">
+            <div>
+              <p class="section-label">03 / Dự án chọn lọc</p>
+              <h2>Học qua những gì đã xây.</h2>
+            </div>
+            <p>Một số sản phẩm cá nhân thể hiện tư duy thiết kế và kỹ năng lập trình.</p>
+          </div>
+
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-preview preview-blue">
+                <div class="app-window">
+                  <div class="app-sidebar">
+                    <b>orbit.</b>
+                    <span class="active"></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="app-content">
+                    <p>Chào buổi sáng, Giang</p>
+                    <div class="app-stats">
+                      <span><strong>08</strong>Đang làm</span>
+                      <span><strong>03</strong>Ưu tiên</span>
+                      <span><strong>12</strong>Hoàn thành</span>
+                    </div>
+                    <div class="app-task">
+                      <span></span>
+                      <p><strong>Hoàn thành portfolio</strong><small>Hôm nay</small></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <p>Ứng dụng web</p>
+                  <span>2025</span>
+                </div>
+                <div class="project-title">
+                  <h3>Orbit — Quản lý công việc</h3>
+                  <a
+                    href="https://github.com/GiangTran1234"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Xem GitHub của Orbit"
+                  >↗</a>
+                </div>
+                <p class="project-description">
+                  Sản phẩm hỗ trợ tổ chức công việc, theo dõi tiến độ và
+                  duy trì sự tập trung trong một không gian trực quan.
+                </p>
+                <ul class="tag-list">
+                  <li>React</li>
+                  <li>TypeScript</li>
+                  <li>Tailwind CSS</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-preview preview-sage">
+                <div class="learn-window">
+                  <p class="learn-logo">forma / learn</p>
+                  <h4>Học điều mới.<br />Mỗi ngày.</h4>
+                  <div class="learn-grid">
+                    <div>
+                      <span>Khóa học hiện tại</span>
+                      <strong>Web Development</strong>
+                    </div>
+                    <div>
+                      <strong>4 / 5</strong>
+                      <span>Mục tiêu tuần</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-info">
+                <div class="project-meta">
+                  <p>Nền tảng học tập</p>
+                  <span>2025</span>
+                </div>
+                <div class="project-title">
+                  <h3>Forma — Nền tảng học tập</h3>
+                  <a
+                    href="https://github.com/GiangTran1234"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Xem GitHub của Forma"
+                  >↗</a>
+                </div>
+                <p class="project-description">
+                  Không gian học tập theo lộ trình, kết hợp ghi chú và
+                  theo dõi tiến độ để tạo thói quen học bền vững.
+                </p>
+                <ul class="tag-list">
+                  <li>Next.js</li>
+                  <li>Node.js</li>
+                  <li>PostgreSQL</li>
+                </ul>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="process" class="section">
+        <div class="container">
+          <div class="section-heading horizontal-heading">
+            <div>
+              <p class="section-label">04 / Cách làm việc</p>
+              <h2>Rõ bài toán. Chắc giải pháp.</h2>
+            </div>
+          </div>
+
+          <div class="process-grid">
+            <article>
+              <span>01</span>
+              <p>Khám phá</p>
+              <h3>Hiểu đúng vấn đề</h3>
+              <p>Lắng nghe, đặt câu hỏi và làm rõ nhu cầu thực sự.</p>
+            </article>
+            <article>
+              <span>02</span>
+              <p>Định hướng</p>
+              <h3>Chọn giải pháp</h3>
+              <p>Phác thảo cấu trúc và công nghệ phù hợp mục tiêu.</p>
+            </article>
+            <article>
+              <span>03</span>
+              <p>Xây dựng</p>
+              <h3>Tiến hành từng bước</h3>
+              <p>Phát triển gọn gàng và kiểm thử trong suốt quá trình.</p>
+            </article>
+            <article>
+              <span>04</span>
+              <p>Cải tiến</p>
+              <h3>Hoàn thiện trải nghiệm</h3>
+              <p>Tiếp nhận phản hồi, đo lường và tối ưu sản phẩm.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="footer">
+      <div class="container">
+        <p class="section-label footer-label">05 / Kết nối</p>
+
+        <div class="footer-heading">
+          <h2>Cùng tạo ra điều<br />có ý nghĩa.</h2>
+          <a
+            class="footer-email"
+            href="mailto:giangtran@example.com"
+          >
+            <span>Gửi email cho mình</span>
+            <b>↗</b>
+          </a>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Trần Nguyên Giang</p>
+          <div class="footer-links">
+            <a
+              href="https://github.com/GiangTran1234"
+              target="_blank"
+              rel="noopener noreferrer"
+            >GitHub ↗</a>
+            <a href="mailto:giangtran@example.com">Email ↗</a>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-
-  <!-- 04: CÁCH TÔI LÀM VIỆC -->
-  <section id="process" class="section">
-    <div class="container">
-      <span class="section-tag">04 — CÁCH TÔI LÀM VIỆC</span>
-      <h2>Rõ bài toán. Chắc giải pháp.</h2>
-
-      <div class="process-grid">
-        <div class="process-step">
-          <span class="step-label">01 / KHÁM PHÁ</span>
-          <h4>Hiểu đúng vấn đề</h4>
-          <p>Lắng nghe, đặt câu hỏi và làm rõ nhu cầu thực sự của người dùng.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-label">02 / ĐỊNH HƯỚNG</span>
-          <h4>Chọn hướng giải quyết</h4>
-          <p>Phác thảo cấu trúc và lựa chọn công nghệ phù hợp với mục tiêu.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-label">03 / XÂY DỰNG</span>
-          <h4>Phát triển từng bước</h4>
-          <p>Triển khai gọn gàng, kiểm thử liên tục để đảm bảo tính ổn định.</p>
-        </div>
-        <div class="process-step">
-          <span class="step-label">04 / CẢI TIẾN</span>
-          <h4>Đo lường & hoàn thiện</h4>
-          <p>Tiếp nhận phản hồi, tối ưu hiệu năng và trải nghiệm sử dụng.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- 05: KẾT NỐI (FOOTER) -->
-  <footer id="contact" class="footer">
-    <div class="container">
-      <span class="section-tag light-tag">05 — KẾT NỐI</span>
-      <div class="footer-main">
+    </footer>
+  </body>
+</html>
